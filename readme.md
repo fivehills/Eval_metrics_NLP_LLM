@@ -10,13 +10,14 @@ This project is to overview **Evaluation Metrics for NLP tasks and LLMs** and pr
 
 For evaluating NLP tasks, the following metrics are often employed.
 
+
 **Exact match (EM):** The percentage of predictions that match any one of the answers exactly.
 
 **(Macro-averaged) F1 score (F1):** Each answer and prediction is tokenized into words. For every answer to a given question, the overlap between the prediction and each answer is calculated and the maximum F1 is chosen. This score is then averaged over all the questions. Formally speaking:
 
-F1 = 2 * precision * recall / (precision + recall)  
-precision = number of same tokens / length(predicted tokens)  
-recall = number of same tokens / length(labeled tokens)
+F1 = (2 * precision * recall) / (precision + recall)  
+precision = (number of same tokens) / length(predicted tokens)  
+recall = (number of same tokens) / length(labeled tokens)
 
 **Perplexity:** Perplexity is a measurement of how well a probability model predicts a sample. A low perplexity indicates the probability distribution is good at predicting the sample. In NLP, perplexity is a way of evaluating language models. A model of an unknown probability distribution p, may be proposed based on a training sample that was drawn from p. Given a proposed probability model q, one may evaluate q by asking how well it predicts a separate test sample x1, x2, ..., xN also drawn from p. The perplexity of the model q is defined as:
 
