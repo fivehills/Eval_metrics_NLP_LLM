@@ -3,37 +3,6 @@
 # About
 This project is to overview **Evaluation Metrics for NLP tasks and LLMs** and propose new effective metrics from the significance of statistical analysis
 
-<p align="center">
-<img src="./assets/nlp_metrics.png" width="300" alt="NLP Metrics Timeline"/>
-</p>
-
-
-
-# Notebooks
-<table align="center"> 
-  <tr>
-    <td align="center"><b>Metric</b></td>
-    <td align="center"><b>Application</b></td>
-    <td align="center" colspan="2"><b>Notebook</b></td>
-  </tr>
-  <tr>
-    <td align="center">BLEU</td><td align="center">Machine Translation</td>
-    <td align="center"><a href="https://github.com/gcunhase/NLPMetrics/blob/master/notebooks/bleu.ipynb">Jupyter</a></td>
-    <td align="center"><a href="https://colab.research.google.com/github/gcunhase/NLPMetrics/blob/master/notebooks/bleu.ipynb">Colab</a></td>
-  </tr>
-  <tr>
-    <td align="center">GLEU (Google-BLEU)</td><td align="center">Machine Translation</td>
-    <td align="center"><a href="https://github.com/gcunhase/NLPMetrics/blob/master/notebooks/gleu.ipynb">Jupyter</a></td>
-    <td align="center"><a href="https://colab.research.google.com/github/gcunhase/NLPMetrics/blob/master/notebooks/gleu.ipynb">Colab</a></td>
-  </tr>
-  <tr>
-    <td align="center">WER (Word Error Rate)</td><td align="center">Transcription Accuracy<br>Machine Translation</td>
-    <td align="center"><a href="https://github.com/gcunhase/NLPMetrics/blob/master/notebooks/wer.ipynb">Jupyter</a></td>
-    <td align="center"><a href="https://colab.research.google.com/github/gcunhase/NLPMetrics/blob/master/notebooks/wer.ipynb">Colab</a></td>
-  </tr>
-</table>
-
-
 
 # Evaluation Metrics for NLP tasks
 
@@ -125,6 +94,9 @@ MCC = (TP * TN - FP * FN) / sqrt((TP + FP) * (TP + FN) * (TN + FP) * (TN + FN))
     * [PyTER](https://pypi.python.org/pypi/pyter/0.2.2.1)
     * **char-TER**: character level TER
 
+
+
+
 ## The Main Evaluation Datasets
 
 | Name | Task | Size | Description |
@@ -139,6 +111,34 @@ MCC = (TP * TN - FP * FN) / sqrt((TP + FP) * (TP + FN) * (TN + FP) * (TN + FN))
 | WikiText-103 & 2 | Language Modelling | 100M+ | Word and character level tokens from Wikipedia |
 | WMT 14 English-German | Language Translation | 4.5M | Sentence pairs for translation |
 | VOiCES | Speech Recognition | 3,900 | Voices in complex environmental settings. 15h material |
+
+
+## Evaluation Dataset Colab Implementations
+
+<table align="center"> 
+  <tr>
+    <td align="center"><b>Metric</b></td>
+    <td align="center"><b>Application</b></td>
+    <td align="center" colspan="2"><b>Notebook</b></td>
+  </tr>
+  <tr>
+    <td align="center">BLEU</td><td align="center">Machine Translation</td>
+    <td align="center"><a href="https://github.com/gcunhase/NLPMetrics/blob/master/notebooks/bleu.ipynb">Jupyter</a></td>
+    <td align="center"><a href="https://colab.research.google.com/github/gcunhase/NLPMetrics/blob/master/notebooks/bleu.ipynb">Colab</a></td>
+  </tr>
+  <tr>
+    <td align="center">GLEU (Google-BLEU)</td><td align="center">Machine Translation</td>
+    <td align="center"><a href="https://github.com/gcunhase/NLPMetrics/blob/master/notebooks/gleu.ipynb">Jupyter</a></td>
+    <td align="center"><a href="https://colab.research.google.com/github/gcunhase/NLPMetrics/blob/master/notebooks/gleu.ipynb">Colab</a></td>
+  </tr>
+  <tr>
+    <td align="center">WER (Word Error Rate)</td><td align="center">Transcription Accuracy<br>Machine Translation</td>
+    <td align="center"><a href="https://github.com/gcunhase/NLPMetrics/blob/master/notebooks/wer.ipynb">Jupyter</a></td>
+    <td align="center"><a href="https://colab.research.google.com/github/gcunhase/NLPMetrics/blob/master/notebooks/wer.ipynb">Colab</a></td>
+  </tr>
+</table>
+
+
 
 #🔥 Evaluation Metrics for LLMs performance
 
