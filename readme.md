@@ -1,12 +1,12 @@
 
 
 # About
-This project is to overview **Evaluation Metrics for NLP tasks and LLMs** and propose new effective metrics from the significance of statistical analysis
+This project is to overview **Evaluation Metrics for NLP tasks and LLMs performance** and propose new effective metrics based on the significance of statistical analysis.
 
 
-# Evaluation Metrics for NLP tasks
+# Evaluation Metrics for NLP Tasks
 
-## General Metrics 
+## Basic Metrics 
 
 For evaluating NLP tasks, the following metrics are often employed.
 
