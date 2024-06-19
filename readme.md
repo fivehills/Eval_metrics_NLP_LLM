@@ -8,32 +8,31 @@ This project is to overview **Evaluation Metrics for NLP tasks and LLMs performa
 
 ## Basic Metrics 
 
-For evaluating NLP tasks, the following metrics are often employed.
+For evaluating NLP tasks, the following metrics are often employed:
 
+**Exact Match (EM):** The percentage of predictions that match any one of the answers exactly.
 
-**Exact match (EM):** The percentage of predictions that match any one of the answers exactly.
+**(Macro-averaged) F1 Score (F1):** Each answer and prediction is tokenized into words. For every answer to a given question, the overlap between the prediction and each answer is calculated and the maximum F1 is chosen. This score is then averaged over all the questions. Formally speaking:
 
-**(Macro-averaged) F1 score (F1):** Each answer and prediction is tokenized into words. For every answer to a given question, the overlap between the prediction and each answer is calculated and the maximum F1 is chosen. This score is then averaged over all the questions. Formally speaking:
+\[ \text{F1} = \frac{2 \times \text{precision} \times \text{recall}}{\text{precision} + \text{recall}} \]
+\[ \text{precision} = \frac{\text{number of same tokens}}{\text{length(predicted tokens)}} \]
+\[ \text{recall} = \frac{\text{number of same tokens}}{\text{length(labeled tokens)}} \]
 
-F1 = (2 * precision * recall) / (precision + recall)  
-precision = (number of same tokens) / length(predicted tokens)  
-recall = (number of same tokens) / length(labeled tokens)
+**Perplexity:** Perplexity is a measurement of how well a probability model predicts a sample. A low perplexity indicates the probability distribution is good at predicting the sample. In NLP, perplexity is a way of evaluating language models. A model of an unknown probability distribution \( p \), may be proposed based on a training sample that was drawn from \( p \). Given a proposed probability model \( q \), one may evaluate \( q \) by asking how well it predicts a separate test sample \( x_1, x_2, \ldots, x_N \) also drawn from \( p \). The perplexity of the model \( q \) is defined as:
 
-**Perplexity:** Perplexity is a measurement of how well a probability model predicts a sample. A low perplexity indicates the probability distribution is good at predicting the sample. In NLP, perplexity is a way of evaluating language models. A model of an unknown probability distribution p, may be proposed based on a training sample that was drawn from p. Given a proposed probability model q, one may evaluate q by asking how well it predicts a separate test sample x1, x2, ..., xN also drawn from p. The perplexity of the model q is defined as:
+\[ b^{-\frac{1}{N} \sum_{i=1}^{N} \log_b q(x_i)} \]
 
-b^(-1/N * sum(i=1 to N) log_b q(xi))
+where \( b \) is customarily 2. (Martinc, Pollak, and Robnik-Šikonja 2019)
 
-where b is customarily 2. (Martinc, Pollak, and Robnik-Šikonja 2019)
+**BLEU:** BLEU (**B**ilingual **E**valuation **U**nderstudy) is an algorithm for evaluating the quality of text which has been machine-translated from one natural language to another. Scores are calculated for individual translated segments—generally sentences—by comparing them with a set of good quality reference translations. Those scores are then averaged over the whole corpus to reach an estimate of the translation's overall quality. Intelligibility or grammatical correctness are not taken into account. (Papineni et al. 2002)
 
-**BLEU:** BLEU (**B**i**l**ingual **E**valuation **U**nderstudy) is an algorithm for evaluating the quality of text which has been machine-translated from one natural language to another. Scores are calculated for individual translated segments—generally sentences—by comparing them with a set of good quality reference translations. Those scores are then averaged over the whole corpus to reach an estimate of the translation's overall quality. Intelligibility or grammatical correctness are not taken into account. (Papineni et al. 2002)
+**Accuracy:** Accuracy is the ratio of the number of correct predictions to the total number of input samples.
 
-**Accuracy:** Accuracy is the ratio of number of correct predictions to the total number of input samples.
+\[ \text{Accuracy} = \frac{\text{TP} + \text{TN}}{\text{TP} + \text{TN} + \text{FP} + \text{FN}} \]
 
-Accuracy = (TP + TN) / (TP + TN + FP + FN)
+**Matthews Correlation Coefficient (MCC):** The MCC is used as a measure of quality of binary classifications. It takes true and false positives and negatives into account and is regarded as a balanced measure which can be used even if the classes are imbalanced. The MCC can be calculated directly from the confusion matrix using the following formula:
 
-**Matthews correlation coefficient**: The MCC is used as a measure of quality of binary classifications. It takes true and false positives and negatives into account and is regarded as a balanced measure which can be used even if the classes are imbalanced. The MCC can be calculated directly from the confusion matrix using the following formula:
-
-MCC = (TP * TN - FP * FN) / sqrt((TP + FP) * (TP + FN) * (TN + FP) * (TN + FN))
+\[ \text{MCC} = \frac{(\text{TP} \times \text{TN}) - (\text{FP} \text{FN})}{\sqrt{(\text{TP} + \text{FP}) (\text{TP} + \text{FN}) (\text{TN} + \text{FP}) (\text{TN} + \text{FN})}} \]
 
 
 ### Note: Average precision
