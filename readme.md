@@ -3,6 +3,15 @@
 # About
 This project is to overview **Evaluation Metrics for NLP tasks and LLMs performance** and propose new effective metrics based on the significance of statistical analysis.
 
+# Cite:
+```
+@article{sun2024comprehensive,
+  title={Comprehensive Reassessment of Large-Scale Evaluation Outcomes in LLMs: A Multifaceted Statistical Approach},
+  author={Sun, Kun and Wang, Rong and Liu, Haitao and S{\o}gaard, Anders},
+  journal={arXiv preprint arXiv:2403.15250},
+  year={2024}
+}
+```
 
 # Evaluation Metrics for NLP Tasks
 
