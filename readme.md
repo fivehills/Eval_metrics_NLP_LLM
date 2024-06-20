@@ -12,7 +12,14 @@ This project is to overview **Evaluation Metrics for NLP tasks and LLMs performa
   year={2024}
 }
 ```
-
+```
+@article{sun2024textual,
+  title={Textual Similarity as a Key Metric in Machine Translation Quality Estimation},
+  author={Sun, Kun and Wang, Rong},
+  journal={arXiv preprint arXiv:2406.07440},
+  year={2024}
+}
+```
 # Evaluation Metrics for NLP Tasks
 
 ## Basic Metrics 
