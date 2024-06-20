@@ -3,7 +3,7 @@
 # About
 This project is to overview **Evaluation Metrics for NLP tasks and LLMs performance** and propose new effective metrics based on the significance of statistical analysis.
 
-# Cite:
+## Cite:
 ```
 @article{sun2024comprehensive,
   title={Comprehensive Reassessment of Large-Scale Evaluation Outcomes in LLMs: A Multifaceted Statistical Approach},
@@ -20,9 +20,9 @@ This project is to overview **Evaluation Metrics for NLP tasks and LLMs performa
   year={2024}
 }
 ```
-# Evaluation Metrics for NLP Tasks
+## Evaluation Metrics for NLP Tasks
 
-## Basic Metrics 
+### Basic Metrics 
 
 For evaluating NLP tasks, the following metrics are often employed:
 
@@ -69,7 +69,7 @@ $$
    * *Macro*: average of sentence scores
    * *Micro*: corpus (sums numerators and denominators for each hypothesis-reference(s) pairs before division)
 
-## Metrics in Machine Translation
+### Metrics in Machine Translation
 1. **BLEU** (BiLingual Evaluation Understudy)
     * [Papineni 2002](https://www.aclweb.org/anthology/P02-1040.pdf)
     * 'Measures how many words overlap in a given translation when compared to a reference translation, giving higher 
@@ -127,7 +127,7 @@ $$
 
 
 
-## The Main Evaluation Datasets
+### The Main Evaluation Datasets
 
 | Name | Task | Size | Description |
 | --- | --- | --- | --- |
@@ -143,7 +143,7 @@ $$
 | VOiCES | Speech Recognition | 3,900 | Voices in complex environmental settings. 15h material |
 
 
-## Evaluation Dataset Colab Implementations
+### Evaluation Dataset Colab Implementations
 
 <table align="center"> 
   <tr>
@@ -170,7 +170,7 @@ $$
 
 
 
-# 🔥 Evaluation Metrics for LLMs performance
+## 🔥 Evaluation Metrics for LLMs performance
 
 
 - Large variety of ready-to-use LLM evaluation metrics (all with explanations) powered by **ANY** LLM of your choice, statistical methods, or NLP models that runs **locally on your machine**:
@@ -198,13 +198,13 @@ $$
   - GSM8K
 
 
-# NLP eval implementations
-## Requirements
+## NLP eval implementations
+### Requirements
 Tested on Python 2.7
 ```
 pip install -r requirements.txt
 ```
 
-## How to Use
+### How to Use
 * Run: `python test/test_mt_text_score.py`
 * Currently only supporting MT metrics
