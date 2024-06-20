@@ -170,7 +170,7 @@ $$
 
 
 
-#🔥 Evaluation Metrics for LLMs performance
+# 🔥 Evaluation Metrics for LLMs performance
 
 
 - Large variety of ready-to-use LLM evaluation metrics (all with explanations) powered by **ANY** LLM of your choice, statistical methods, or NLP models that runs **locally on your machine**:
